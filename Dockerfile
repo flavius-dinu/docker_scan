@@ -37,7 +37,6 @@ RUN curl -LO "https://dl.k8s.io/release/v$KUBECTL_VERSION/bin/linux/amd64/kubect
     mv kubectl /usr/local/bin/
 
 RUN pipx install ansible-core==${ANSIBLE_VERSION}
-
 WORKDIR /workspace
 
 CMD ["bash"]
